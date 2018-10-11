@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <h1 id="app-title">SpaceXplained</h1>
+    <span style="flex: 1 1 auto;"></span>
+    <button mat-button>Missions</button>
+    <button mat-button>Cores</button>
+    <button mat-button>Capsules</button>
+    <button mat-button [matMenuTriggerFor]="info">Info</button>
+    <mat-menu #info="matMenu">
+        <button mat-menu-item>History</button>
+        <button mat-menu-item>Launchpads</button>
+        <button mat-menu-item>Payloads</button>
+        <button mat-menu-item>Rockets</button>
+        <button mat-menu-item>Ships</button>
+    </mat-menu>
+</mat-toolbar>
